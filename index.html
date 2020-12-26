@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - RWD: Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src= https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
+<body id="background">
+<h1 id="title">Tea Survey Form</h1>
+<p id="description">Hello fellow tea enthusiasts! Please complete this survey to collect data for our company, Just Tea.</p> 
+  <br>
+<form id="survey-form">
+  <!--Text Inputs-->
+  <div class="group">
+  <label id="name-label" for="name">Name:
+  <input type="text" placeholder="Name" id="name" required></label>
+  
+  <label id="email-label" for="email">Email:
+  <input type="email" placeholder="Email Address" id="email" required></label>
+  
+  <label id="number-label" for="number">How many cups of tea do you drink daily?</label>
+  <input type="number" id="number" name="number" min="0" max="50"  placeholder="0" required>
+ </div>
+ 
+  <!--Dropdown-->
+  <div class="group">
+  <label for="dropdown" >What tea do you prefer?</label>
+  <select name="dropdown" id="dropdown">
+    <option disabled selected value>Select a type of tea</option>
+    <option value="green">Green Tea</option>
+    <option value="herbal">Herbal Tea</option>
+    <option value="oolong">Oolong Tea</option>
+    <option value="white">White Tea</option>
+    <option value="yellow">Yellow Tea</option>
+    <option value="fermented">Fermented Tea</option>
+  </select>
+  </div>
+  <!--Radio Buttons-->
+  <p>What is your preference with respect to tea?</p>
+  <div class="group">
+  <label><input type="radio" name="user" value="taste-quality" class="radio"/>Taste / Quality</label>
+  
+  <label><input type="radio" name="user" value="availability/con"  class="radio"/>Availability / Convenience</label>
+ 
+  <label><input type="radio" name="user" value="price" class="radio"/>Price</label>
+  
+  <label><input type="radio" name="user" value="family-pref" class="radio" />Family Preference</label>
+  </div>
+ 
+  
+  <!-- Check Box-->
+  <p>Where do you typically enjoy drinking tea? (Check all that apply)</p>
+  <div class="group">
+  <label for="shop"><input class="checkbox" type="checkbox" name="shop" value="shop">At a tea/ coffee shop</label>
+  
+  <label for="home"><input id="checkbox" type="checkbox" name="home" value="home">At Home</label>
+  
+  <label for="work"><input id="checkbox" type="checkbox" name="work" value="work">At Work</label>
+  
+  <label for="other"><input id="checkbox" type="checkbox" name="work" value="other">Other 
+    Please Specify:</label>
+  <input type="text" id="checkbox">
+  </div>
+  <!--Text Area-->
+  <textarea rows="4" cols="50"> Any additional suggestions or comments submit them here!</textarea>
+ <br> 
+  <!--Submit-->
+  <input type="submit" value="Submit" id="submit">
+   <input type="reset" value="Cancel" />
+</form>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
